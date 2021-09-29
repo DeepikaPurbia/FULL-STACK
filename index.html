@@ -5,64 +5,223 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Javascript</title>``
+    <title>To-do-list</title>
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         * {
+            text-decoration: none;
             box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: unset;
+            font-family: 'Poppins', sans-serif;
         }
         
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        header {
+            background-image: url(./assets/day.jpeg);
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .container {
+            display: block;
             justify-content: center;
-            margin: 25px;
-            background-color: darkgrey;
-            height: 100vh;
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            margin: 150px;
+            margin-left: 450px;
+            background-color: transparent;
+        }
+        /* footer styles */
+        
+        footer {
+            width: 100vw;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            color: #111;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: #560BAD;
+            bottom: 0;
+            position: absolute;
+            justify-content: space-between;
+        }
+        
+        img.social {
+            width: 30px;
+            padding: 0.2rem;
+            margin: 0px 5px;
+        }
+        
+        .container-1 {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        
+        .square {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 70px;
+            height: 36px;
+            margin: 0.2rem;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid #f1f1f1;
+        }
+        
+        .circle {
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border-radius: 50%;
+            padding: 0.1em;
+        }
+        
+        .task-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            margin: 18px 0;
+            background-color: white;
+            color: #6c757d;
         }
         
         h1 {
-            color: rgb(17, 17, 153);
-            font: size 24px;
-            font-family: cursive;
-            text-align: center;
-            font-weight: 900;
-        }
-        
-        p {
-            color: crimson;
-            background-color: burlywood;
-            display: flex;
-            text-align: center;
-        }
-        
-        button {
-            background-color: red;
-            padding: 10px;
-            text-align: center;
-            border: rgb(114, 101, 101);
-            border-width: 10px;
-            border-radius: 5px;
-            font-weight: 700;
             color: white;
-            left: 3pt;
-            margin: 10px
- doc       }
+            font-weight: 800;
+        }
+        
+        ;
+        .container-3 {
+            font-size: .9rem;
+            font: 200;
+            color: #6c757d;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            border-radius: 3px;
+            padding: 0 8px;
+            margin: 10px;
+        }
+        
+        .task-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 150px;
+            background-color: #f1f1f1;
+        }
+        
+        .task-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            color: #6c757d;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .title {
+            font-size: 1em;
+        }
     </style>
+
+
 </head>
 
 <body>
- 
+    <!--Header-->
+
+    <header>
+
+        <div class="container">
+
+            <div class="container-1">
+                <h1>ToDo List</h1>
+                <div class=square>
+                    <div class=circle></div>
+                </div>
+            </div>
+
+
+
+            <div class="task-1">
+                <h1 style="color:#6c757d;">Add a task to a List...</h1>
+                <h1><span style="color:purple">+</span></h1>
+            </div>
+
+
+
+
+            <div class="task-content">
+
+                <div class="task-2">
+
+                    <h2 class="title">1 itms</h2>
+                    <h2 class="title"> <span style="color:purple">All &nbsp;&nbsp; </span> Pending &nbsp;&nbsp;Completed</h2>
+                    <h2 class="title">Clear</h2>
+                </div>
+
+
+
+                <div class="task-2">
+                    <h2>GO TO GYM</h2>
+                </div>
+            </div>
 
 
 
 
 
 
+        </div>
 
 
+    </header>
 
-    <script src="./app.js"></script>
+    <!--footer-->
+    <footer>
+        <div>
+            <a href="#">Deepika Purbia</a>
+        </div>
+        <div>
+            <a href="">
+                <img class="social" src="./assets/github.png" alt="Github" />
+            </a>
+
+            <a href="#">
+                <img class="social" src="./assets/instagram.png" alt="instagram" />
+            </a>
+
+            <a href="#">
+                <img class="social" src="./assets/linkedin.png" alt="linkedin" />
+            </a>
+        </div>
+    </footer>
+
+    <!--/footer-->
+
 </body>
+
+
+
+
+
+
+
+
+
 
 </html>
